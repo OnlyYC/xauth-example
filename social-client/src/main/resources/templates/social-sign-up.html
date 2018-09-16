@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+</head>
+<body>
+	<p th:text="|你真正使用${provide}登录|">你真正使用...登录</a>
+	<h3>请完善以下信息</h3>
+	<form action="/user/regist" method="post">
+		<table>
+			<tr>
+				<td>名称:</td>
+				<td><input type="text" name="nickname" th:value="${nickname}"></td>
+			</tr>
+			<tr>
+				<td>用户名:</td> 
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>密码:</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit" name="type">登录</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

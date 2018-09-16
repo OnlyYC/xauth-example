@@ -1,0 +1,22 @@
+
+server:
+  port: 8000
+
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/xauth_social_client?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: root
+    thymeleaf:
+      cache: false
+my:
+  social:
+    xauth:
+      app-id: demoApp
+      app-secret: demoAppSecret
+      scope: all
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.liaoyb: DEBUG

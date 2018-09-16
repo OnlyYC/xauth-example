@@ -1,0 +1,9 @@
+
+security:
+  oauth2:
+    client:
+      clientId: demoApp
+      clientSecret: demoAppSecret
+      pre-established-redirect-uri: http://localhost:8081/callback
+server:
+  port: 8000
